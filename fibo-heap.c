@@ -92,7 +92,7 @@ printf("%d ",x->key);//to print the last node
 
 
 
-view_child_list(struct heap *H,int n)
+void view_child_list(struct heap *H,int n)
 {
 	struct fib *temp=H->rl;
 	struct fib *stop=temp->left;
@@ -174,7 +174,7 @@ void consolidate(struct heap **H,struct fib **beg)//consolidate the list so as t
 
 }
 
-struct fib *e_min(struct heap **H)
+struct fib *extract_min(struct heap **H)
 {
 struct fib *z=(*H)->min;
 struct fib *t;
@@ -255,7 +255,7 @@ switch(k)
 		}
 		else
 		{
-		temp=e_min(&H);
+		temp=extract_min(&H);
 		printf("Min= %d\n",temp->key);
 		break;
 		}
