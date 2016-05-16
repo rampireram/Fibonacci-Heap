@@ -3,9 +3,7 @@ Fibonacci-Heap
 
 Implementation of Fibonacci Heap in C
 
-This is my first project in GitHub.
-
-The following procedures have been implemented in this project.
+This project has a Fibonacci heap that could perform the following operations:
 
 1.insert_into_root_list   //method to insert a node into the root list
 
@@ -31,4 +29,4 @@ Methods to be implemented yet.
 a.Decrease_key
 b.Delete a node from the list
 
-Any suggestions to improve the code and its efficiency are welcome.
+The JNI interface allows for a Java implementation of the fibonacci heaps. This requires that you run the makefile and make the Cpp project into a DLL/SO and then access it from Java using JNI. It's faster when compared to a Java based implementation of Fibonacci heap.
